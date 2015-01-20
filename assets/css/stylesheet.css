@@ -1,0 +1,355 @@
+#main{
+	width: 100%;
+	height: 1000px;
+}
+#container{
+	margin: 0 auto;
+	width:1550px;
+}
+#outerBoard{
+	margin-top: 5px;
+	border: 6px solid black;
+	height: 925px;
+	width: 925px;
+	display: inline-block;
+	float: right;
+	box-shadow: 20px 20px 50px 20px #888888;
+}
+
+.outerBoardContainer{
+	position:relative;
+	border: 2px solid red;
+	height: 31.5%;
+	width: 97.5%;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
+.innerBoardContainer{
+	position:relative;
+	border: 2px solid green;
+	height: 30%;
+	width: 95%;
+	margin-top: 1.25%;
+	margin-left: 1.75%;
+}
+
+.inner{
+	display: inline-block;
+	border: 5px solid black;
+	position:relative;
+	height: 93%;
+	width: 31%;
+	margin-left: 0.75%;
+	margin-top: 0.5%;
+}
+
+.square{
+	display: inline-block;
+	border: 4px solid blue;
+	position:relative;
+	height: 75%;
+	width: 25%;
+	margin-left: 3%;
+	margin-top: 2.25%;
+	transition: 0.5s;
+}
+
+.square:hover{
+	border: 4px solid #32CD32;
+	transition: 0.5s;
+}
+
+#title{
+	display: inline-block;
+	float:left;
+	width: 500px;
+	margin-top:50px;
+}
+#title span{
+	font-family: Courier;
+	font-weight: bolder;
+	font-variant:small-caps;
+}
+#super{
+	width: 500px;
+	height: 300px;
+
+	-webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    transform: rotate(10deg);
+    box-shadow: 10px 10px 5px pink;
+}
+
+#superSpan{
+	font-size: 200px;
+}
+
+#tic{
+	width: 220px;
+	height: 315px;
+	float: left;
+
+	-webkit-transform: rotate(80deg);
+    -moz-transform: rotate(80deg);
+    -o-transform: rotate(80deg);
+    -ms-transform: rotate(80deg);
+    transform: rotate(80deg);
+}
+
+#ticSpan{
+	font-size: 290px;
+}
+
+#tac{
+	margin-top: 10px;
+	width: 275px;
+	height: 200px;
+	float: right;
+
+	-webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+
+    box-shadow: 20px 20px 40px 15px #9DEBE9;
+}
+
+#tacSpan{
+	font-size: 190px;
+}
+
+#toe{
+	margin-top: 50px;
+	bottom: 0px;
+	right: 0px;
+	width: 275px;
+	height: 200px;
+	float: right;
+
+	-webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    transform: rotate(10deg);
+
+    box-shadow: 20px 20px 40px 15px #ffd700;
+}
+
+#toeSpan{
+	font-size: 190px;
+}
+#instructions{
+	width:100%;
+}
+#instructions-header{
+	font-family: 'Alegreya Sans', sans-serif;
+	font-weight: bold;
+	font-size: 72px;
+	padding: 25px 0px 10px 0px;
+	width: 960px;
+	margin: 0 auto;
+}
+#instructions-info{
+	width: 960px;
+	font-size: 24px;
+	font-family: 'Josefin Sans', sans-serif;
+	line-height: 27px;
+	margin: 0 auto;
+	padding-bottom: 100px;
+}
+#instructions-info div{
+	padding: 5px 25px 5px 25px;
+}
+#instructions-info ul{
+
+}
+#instructions-info ul li{
+	padding: 5px;
+	line-height: 27px;
+}
+
+@media (max-width: 1550px){
+	#container{
+		width: 1250px;
+	}
+	#outerBoard{
+		width: 825px;
+		height: 825px;
+		border:5px solid black;
+	}
+	.innerBoardContainer{
+		margin-top: 3.5px;
+	}
+	.inner{
+		margin-left:0.6%
+	}
+	.square{
+		width:25%;
+	}
+	#title{
+		display: inline-block;
+		float:left;
+		width: 370px;
+		margin-top:75px;
+	}
+	#title span{
+		font-family: Courier;
+		font-weight: bolder;
+		font-variant:small-caps;
+	}
+	#super{
+		width:100%;
+		height: 200px;
+	}
+
+	#superSpan{
+		font-size: 150px;
+	}
+
+	#tic{
+		width: 160px;
+		height: 275px;
+	}
+
+	#ticSpan{
+		font-size: 225px;
+	}
+
+	#tac{
+		width: 210px;
+		height: 170px;
+	}
+
+	#tacSpan{
+		font-size: 135px;
+	}
+
+	#toe{
+		margin-top: 40px;
+		bottom: 0px;
+		right: 0px;
+		width: 210px;
+		height: 170px;
+	}
+	#toeSpan{
+		font-size: 135px;
+	}
+}
+@media (max-width: 1200px){
+	#container{
+		width: 1050px;
+	}
+	#outerBoard{
+		position: absolute;
+		width: 850px;
+		height: 850px;
+		border:5px solid black;
+		top:100px;
+		left:8%;
+	}
+	.inner{
+		margin-left: 0.6%;
+	}
+	#title{
+		width:100%;
+		height: 125px;
+		margin-top: -10px;
+		margin-left: 7.5%;
+	}
+	.square{
+		border:3px solid blue;
+		margin-left: 4%
+	}
+	.square:hover{
+		border: 3px solid #32CD32;
+		transition: 0.5s;
+	}
+	#title div{
+		display: inline-block;
+		-webkit-transform: rotate(0deg);
+	    -moz-transform: rotate(0deg);
+	    -o-transform: rotate(0deg);
+	    -ms-transform: rotate(0deg);
+	    transform: rotate(0deg);
+	    float: left;
+	    width:auto;
+	    height: 100px;
+	    position: relative;
+	}
+	#title span{
+		font-size: 100px;
+	}
+	#toe{
+		margin-top: 0px;
+	}
+	#instructions{
+		margin: 0 auto;
+		padding:20px 0px 20px 40px;
+		border-top: 2px solid black;
+	}
+	#instructionsSpan{
+		font-size: 70px;
+	}
+	#instructionsP{
+		font-size: 25px;
+	}
+	#idea{
+		font-size:25px;
+		text-align:center;
+		text-decoration:none
+	}
+}
+@media (max-width: 900px){
+	#container{
+		width: 800px;
+	}
+	#outerBoard{
+		width: 750px;
+		height: 750px;
+		border:4px solid black;
+		left:5%;
+	}
+	.outerBoardContainer{
+		height: 31%;
+	}
+	.innerBoardContainer{
+		margin-left: 2%;
+		margin-top: 1.2%
+	}
+	.inner{
+		margin-left: 0.4%;
+	}
+	.square{
+		width:24%;
+	}
+	#title{
+		width:100%;
+		height: 90px;
+		margin-top: 0px;
+		margin-left: 10%;
+	}
+	#title span{
+		font-size: 80px;
+	}
+}
+@media (max-width: 768px){
+	#container{
+		width: 700px;
+	}
+	#outerBoard{
+		width: 650px;
+		height: 675px;
+		left:3%;
+	}
+	.inner{
+		margin-left: 0.25%;
+	}
+	.innerBoardContainer{
+		margin-left: 1.7%;
+		margin-top: 1%
+	}
+}
